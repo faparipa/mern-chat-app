@@ -1,13 +1,14 @@
 import { BiLogOut } from 'react-icons/bi';
-//import useLogout from '../../hooks/useLogout';
+import useLogout from '../../hooks/useLogout';
+
 //import { useState } from 'react';
 
 const LogoutButton = () => {
-  //const { loading, logout } = useLogout();
-  const loading = false;
-  const logout = () => {
-    console.log('logout');
-  };
+  const { loading, logout } = useLogout();
+  //const loading = false;
+  // const logout = () => {
+  //   console.log('logout');
+  // };
   return (
     <div className='mt-auto'>
       {!loading ? (
